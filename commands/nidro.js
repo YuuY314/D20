@@ -15,7 +15,7 @@ const page1 = new EmbedBuilder()
 		{ name: '-----------------------------------------------', value: ' ' },
 		{ name: 'Força', value: '20 | +5', inline: true },
 		{ name: 'Destreza', value: '16 | +3', inline: true },
-		{ name: 'Constituição', value: '20 | +3', inline: true },
+		{ name: 'Constituição', value: '20 | +5', inline: true },
 		{ name: 'Inteligência', value: '12 | +1', inline: true },
 		{ name: 'Sabedoria', value: '14 | +2', inline: true },
 		{ name: 'Carisma', value: '13 | +1', inline: true },
@@ -28,26 +28,26 @@ const page1 = new EmbedBuilder()
 
 const page2 = new EmbedBuilder()
 	.setColor(0x0099FF)
-	.setTitle('Características')
+	.setTitle('Características de Guerreiro')
 	.setAuthor({ name: 'Nidro Houggen' })
 	.setThumbnail('https://imgur.com/49jQoKO.png')
 	.addFields(
-		{ name: 'Arma de Sopro (x5) [3d10] [Curto/Longo]', value: '```Quando você usa sua arma de sopro, cada criatura na área exalada deve realizar um teste de resistência, o tipo do teste é determinado pelo seu ancestral dracônico (Cone de 4,5 metros com teste de resistência de Destreza).```' },
-		{ name: 'Resistência a Dano [Fogo]', value: '```Você possui resistência ao tipo de dano associado ao seu ancestral dracônico.```' },
-		{ name: 'Duelismo', value: '```Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.```' },
-		{ name: 'Retomar o Fôlego [Curto/Longo]', value: '```Você possui uma reserva de estamina e pode usá-la para proteger a si mesmo contra danos. No seu turno, você pode usar uma ação bônus para recuperar pontos de vida igual a 1d10 + seu nível de guerreiro.```' },
-		{ name: 'Surto de Ação [Curto/Longo]', value: '```Você pode forçar o seu limite para além do normal por um momento. Durante o seu turno, você pode realizar uma ação adicional juntamente com sua ação e possível ação bônus.```' },
-		{ name: 'Indomável (x2) [Longo]', value: '```Você pode jogar de novo um teste de resistência que falhou. Se o fizer, você deve usar o novo valor e não pode usar essa característica de novo antes de terminar um descanso longo.```' },
+		{ name: 'Arma de Sopro (x5) [3d10] [Curto/Longo]', value: '```	Quando você usa sua arma de sopro, cada criatura na área exalada deve realizar um teste de resistência, o tipo do teste é determinado pelo seu ancestral dracônico (Cone de 4,5 metros com teste de resistência de Destreza).```' },
+		{ name: 'Resistência a Dano [Fogo]', value: '```	Você possui resistência ao tipo de dano associado ao seu ancestral dracônico.```' },
+		{ name: 'Duelismo', value: '```	Quando você empunhar uma arma de ataque corpo-acorpo em uma mão e nenhuma outra arma, você ganha +2 de bônus nas jogadas de dano com essa arma.```' },
+		{ name: 'Retomar o Fôlego [Curto/Longo]', value: '```	Você possui uma reserva de estamina e pode usá-la para proteger a si mesmo contra danos. No seu turno, você pode usar uma ação bônus para recuperar pontos de vida igual a 1d10 + seu nível de guerreiro.```' },
+		{ name: 'Surto de Ação [Curto/Longo]', value: '```	Você pode forçar o seu limite para além do normal por um momento. Durante o seu turno, você pode realizar uma ação adicional juntamente com sua ação e possível ação bônus.```' },
+		{ name: 'Indomável (x2) [Longo]', value: '```	Você pode jogar de novo um teste de resistência que falhou. Se o fizer, você deve usar o novo valor e não pode usar essa característica de novo antes de terminar um descanso longo.```' },
 	)
 
 const page3 = new EmbedBuilder()
 	.setColor(0x0099FF)
-	.setTitle('Superioridade em combate')
+	.setTitle('Características de Mestre de Batalha')
 	.setAuthor({ name: 'Nidro Houggen' })
 	.setThumbnail('https://imgur.com/49jQoKO.png')
 	.addFields(
-		{ name: 'Estudioso da guerra', value: '```Você ganha proficiência com um tipo de ferramenta de artesão, à sua escolha.```' },
-		{ name: 'Conheça seu inimigo', value: '```Se você gastar, pelo menos, 1 minuto observando ou interagindo com outra criatura fora de combate, você pode aprender certas informações sobre as capacidades dela comparadas as suas. O Mestre conta a você se a criatura é igual, superior ou inferior a você a respeito de duas das seguintes características, à sua escolha:\n- Valor de Força \n- Valor de Destreza \n- Valor de Constituição \n- Classe de Armadura \n- Pontos de Vida atuais \n- Nível total de classe (se possuir) \n- Níveis da classe guerreiro (se possuir)```' },
+		{ name: 'Estudioso da guerra', value: '```	Você ganha proficiência com um tipo de ferramenta de artesão, à sua escolha.```' },
+		{ name: 'Conheça seu inimigo', value: '```	Se você gastar, pelo menos, 1 minuto observando ou interagindo com outra criatura fora de combate, você pode aprender certas informações sobre as capacidades dela comparadas as suas. O Mestre conta a você se a criatura é igual, superior ou inferior a você a respeito de duas das seguintes características, à sua escolha:\n- Valor de Força \n- Valor de Destreza \n- Valor de Constituição \n- Classe de Armadura \n- Pontos de Vida atuais \n- Nível total de classe (se possuir) \n- Níveis da classe guerreiro (se possuir)```' },
 	)
 
 const page4 = new EmbedBuilder()
@@ -59,13 +59,13 @@ const page4 = new EmbedBuilder()
 		{ name: 'Dados de superioridade', value: '5 | d10', inline: true },
 		{ name: 'CD para manobra', value: '18', inline: true },
 		{ name: '-----------------------------------------------', value: ' ' },
-		{ name: 'Aparar', value: '```Quando outra criatura causar dano a você com um ataque corpo-a-corpo, você pode usar sua reação e gastar um dado de superioridade para reduzir o dano pelo número rolado no dado de superioridade + seu modificador de Destreza.```' },
-		{ name: 'Ataque Ameaçador', value: '```Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar amedrontar o alvo. Você adiciona seu dado de superioridade a jogada de dano do ataque e o alvo deve realizar um teste de resistência de Sabedoria. Se falhar, ele ficará com medo de você até o final do seu próximo turno.```' },
-		{ name: 'Ataque de Precisão', value: '```Quando você realizar uma jogada de ataque com arma contra uma criatura, você pode gastar um dado de superioridade para adicioná-lo a jogada. Você pode usar essa manobra antes ou depois de realizar a jogada de ataque, mas deve usá-la antes de qualquer efeito do ataque ser aplicado.```' },
-		{ name: 'Ataque Desarmante', value: '```Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar desarmar o alvo, forçando-o a derrubar um item, à sua escolha, que ele esteja empunhando. Você adiciona o dado de superioridade a jogada de dano do ataque e o alvo deve realizar um teste de resistência de Força. Se fracassar, ele derrubará o objeto escolhido. O objeto cai aos pés dele. ```' },
-		{ name: 'Ataque Imobilizador', value: '```Imediatamente após acertar uma criatura com um ataque corpo-a-corpo em seu turno, você pode gastar um dado de superioridade e então tentar agarrar o alvo como uma ação bônus (veja o Livro do Jogador para as regras sobre Agarrar). Adicione o dado de superioridade ao seu teste de Força (Atletismo).```' },
-		{ name: 'Contra-Atacar', value: '```Quando uma criatura atacar você com um ataque corpo-a-corpo e errar, você pode usar sua reação e gastar um dado de superioridade para realizar um ataque corpo-a-corpo com arma contra essa criatura. Se você atingir, você adiciona seu dado de superioridade a jogada de dano do ataque.```' },
-		{ name: 'Derrubar', value: '```Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar derrubar o alvo no chão. Você adiciona seu dado de superioridade a jogada de dano do ataque e, se o alvo for Grande ou menor, ele deve realizar um teste de resistência de Força. Se falhar, o alvo ficará caído no chão.```' },
+		{ name: 'Aparar', value: '```	Quando outra criatura causar dano a você com um ataque corpo-a-corpo, você pode usar sua reação e gastar um dado de superioridade para reduzir o dano pelo número rolado no dado de superioridade + seu modificador de Destreza.```' },
+		{ name: 'Ataque Ameaçador', value: '```	Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar amedrontar o alvo. Você adiciona seu dado de superioridade a jogada de dano do ataque e o alvo deve realizar um teste de resistência de Sabedoria. Se falhar, ele ficará com medo de você até o final do seu próximo turno.```' },
+		{ name: 'Ataque de Precisão', value: '```	Quando você realizar uma jogada de ataque com arma contra uma criatura, você pode gastar um dado de superioridade para adicioná-lo a jogada. Você pode usar essa manobra antes ou depois de realizar a jogada de ataque, mas deve usá-la antes de qualquer efeito do ataque ser aplicado.```' },
+		{ name: 'Ataque Desarmante', value: '```	Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar desarmar o alvo, forçando-o a derrubar um item, à sua escolha, que ele esteja empunhando. Você adiciona o dado de superioridade a jogada de dano do ataque e o alvo deve realizar um teste de resistência de Força. Se fracassar, ele derrubará o objeto escolhido. O objeto cai aos pés dele. ```' },
+		{ name: 'Ataque Imobilizador', value: '```	Imediatamente após acertar uma criatura com um ataque corpo-a-corpo em seu turno, você pode gastar um dado de superioridade e então tentar agarrar o alvo como uma ação bônus (veja o Livro do Jogador para as regras sobre Agarrar). Adicione o dado de superioridade ao seu teste de Força (Atletismo).```' },
+		{ name: 'Contra-Atacar', value: '```	Quando uma criatura atacar você com um ataque corpo-a-corpo e errar, você pode usar sua reação e gastar um dado de superioridade para realizar um ataque corpo-a-corpo com arma contra essa criatura. Se você atingir, você adiciona seu dado de superioridade a jogada de dano do ataque.```' },
+		{ name: 'Derrubar', value: '```	Quando você atingir uma criatura com um ataque com arma, você pode gastar um dado de superioridade para tentar derrubar o alvo no chão. Você adiciona seu dado de superioridade a jogada de dano do ataque e, se o alvo for Grande ou menor, ele deve realizar um teste de resistência de Força. Se falhar, o alvo ficará caído no chão.```' },
 	)
 
 const page5 = new EmbedBuilder()
@@ -74,6 +74,9 @@ const page5 = new EmbedBuilder()
 	.setAuthor({ name: 'Nidro Houggen' })
 	.setThumbnail('https://imgur.com/49jQoKO.png')
 	.addFields(
+		{ name: 'Raça', value: 'Draconato Vermelho', inline: true },
+		{ name: 'Antecedente', value: 'Soldado', inline: true },
+		{ name: 'Alinhamento', value: 'Leal e Bom', inline: true },
 		{ name: 'Idade', value: '19 | 25/05 de 2d.GE', inline: true },
 		{ name: 'Altura', value: '1,84 metros', inline: true },
 		{ name: 'Peso', value: '132 quilos', inline: true },
